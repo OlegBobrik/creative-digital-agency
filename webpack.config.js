@@ -54,7 +54,7 @@ module.exports = {
         test: /\.(eot|svg|ttf|woff|woff2)$/,
         use: [
           {
-            loader: 'file-loader?name=./fonts/[name].[ext]'
+            loader: 'file-loader?name=../fonts/[name].[ext]'
           }
         ]
       }, {
@@ -63,7 +63,7 @@ module.exports = {
           {
             loader: 'file-loader',
             options: {
-              name: './img/[name].[ext]',
+              name: '../img/[name].[ext]',
             },
           },
         ],

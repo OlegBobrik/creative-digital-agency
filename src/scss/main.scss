@@ -1,0 +1,15 @@
+// CSS styles
+@import "../css/fonts.css";
+@import "../css/normalize.css";
+
+// Global styles
+@import "./global/visually-hidden.scss";
+@import "./global/variables.scss";
+@import "./global/base.scss";
+
+// Blocks styles
+@import "./blocks/header.scss";
+@import "./blocks/logo.scss";
+@import "./blocks/nav-list.scss";
+@import "./blocks/social-list.scss";
+@import "./blocks/site.scss";

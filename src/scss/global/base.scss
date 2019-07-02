@@ -1,0 +1,17 @@
+html,
+body {
+  min-width: $mobile-width;
+  // max-width: $desktop-width;
+  margin: 0 auto;
+  font-family: $gotham;
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: 400;
+  color: $black;
+  background-color: #ffffff;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}

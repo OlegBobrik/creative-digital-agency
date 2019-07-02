@@ -1,0 +1,20 @@
+.nav-list {
+  width: 700px;
+  margin: 0;
+  padding: 0;
+  font-family: $myriad;
+  font-size: 20px;
+  line-height: 26px;
+  list-style: none;
+}
+
+.nav-list__item {
+  display: inline;
+  padding: 0 10px;
+  margin-right: 27px;
+}
+
+.nav-list__link {
+  color: #ffffff;
+  text-decoration: none;
+}

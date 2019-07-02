@@ -1,0 +1,23 @@
+.logo {
+  position: relative;
+  width: 67px;
+  height: 67px;
+  background-color: #c8c7c7;
+}
+
+.logo__cs {
+  position: relative;
+  top: -10px;
+  left: -12px;
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 67px;
+  height: 67px;
+  font-family: $opensans;
+  font-size: 30px;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: $blue;
+}
