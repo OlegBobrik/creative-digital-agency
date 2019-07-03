@@ -1,0 +1,18 @@
+.headline {
+  font-family: $gotham;
+  text-transform: uppercase;
+}
+
+.headline__title {
+  margin: 20px 0;
+  line-height: normal;
+  font-size: 152px;
+  letter-spacing: -0.05em;
+  color: #ffffff;
+}
+
+.headline__text {
+  font-size: 24px;
+  letter-spacing: 0.74em;
+  color: $blue;
+}

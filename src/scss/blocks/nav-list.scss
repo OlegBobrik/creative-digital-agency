@@ -1,5 +1,6 @@
 .nav-list {
-  width: 700px;
+  display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
   font-family: $myriad;
@@ -10,11 +11,20 @@
 
 .nav-list__item {
   display: inline;
-  padding: 0 10px;
-  margin-right: 27px;
+  min-height: 64px;
+  margin-right: 1.1em;
 }
 
 .nav-list__link {
+  padding: 0 13px 35px 13px;
   color: #ffffff;
   text-decoration: none;
+
+  &--active {
+    border-bottom: 6px solid $blue;
+  }
+
+  &:hover {
+    color: $blue;
+  }
 }

@@ -9,59 +9,87 @@
 </head>
 
 <body>
-  <header class="header">
-    <div class="header__container">
-      <div class="header__logo logo">
-        <span class="logo__cs">CS</span>
-      </div>
-      <nav class="header__nav nav">
-        <ul class="nav__list nav-list">
-          <li class="nav-list__item">
-            <a class="nav-list__link nav-list__link--active" href="#">Home</a>
+  <header class="page-header">
+    <div class="page-header__container">
+      <div class="page-header__top">
+        <div class="page-header__logo logo">
+          <span class="logo__cs">CS</span>
+        </div>
+        <nav class="page-header__nav nav">
+          <ul class="nav__list nav-list">
+            <li class="nav-list__item">
+              <a class="nav-list__link nav-list__link--active" href="#">Home</a>
+            </li>
+            <li class="nav-list__item">
+              <a class="nav-list__link" href="#">Pages</a>
+            </li>
+            <li class="nav-list__item">
+              <a class="nav-list__link" href="#">Features</a>
+            </li>
+            <li class="nav-list__item">
+              <a class="nav-list__link" href="#">Extensions</a>
+            </li>
+            <li class="nav-list__item">
+              <a class="nav-list__link" href="#">Tutorials</a>
+            </li>
+            <li class="nav-list__item">
+              <a class="nav-list__link" href="#">Contact us</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="page-header__social social-list">
+          <li class="social-list__item">
+            <a class="social-list__link" href="#">
+              <span class="visually-hidden">Facebook</span>
+              <svg class="social-list__icon social-list__icon--fb" viewBox="0 0 500 500"
+                preserveAspectRatio="xMidYMid meet" width="30" height="30" fill="#ffffff">
+                <use xlink:href="./img/icons.svg#facebook"></use>
+              </svg>
+            </a>
           </li>
-          <li class="nav-list__item">
-            <a class="nav-list__link" href="#">Pages</a>
+          <li class="social-list__item">
+            <a class="social-list__link" href="#">
+              <span class="visually-hidden">Twitter</span>
+              <svg class="social-list__icon social-list__icon--tw" viewBox="0 0 600 600"
+                preserveAspectRatio="xMidYMid meet" width="30" height="30" fill="#ffffff">
+                <use xlink:href="./img/icons.svg#twitter"></use>
+              </svg>
+            </a>
           </li>
-          <li class="nav-list__item">
-            <a class="nav-list__link" href="#">Features</a>
+          <li class="social-list__item">
+            <a class="social-list__link" href="#">
+              <span class="visually-hidden">Skype</span>
+              <svg class="social-list__icon social-list__icon--sky" viewBox="0 0 500 500"
+                preserveAspectRatio="xMidYMid meet" width="30" height="30" fill="#ffffff">
+                <use xlink:href="./img/icons.svg#skype"></use>
+              </svg>
+            </a>
           </li>
-          <li class="nav-list__item">
-            <a class="nav-list__link" href="#">Extensions</a>
-          </li>
-          <li class="nav-list__item">
-            <a class="nav-list__link" href="#">Tutorials</a>
-          </li>
-          <li class="nav-list__item">
-            <a class="nav-list__link" href="#">Contact us</a>
+          <li class="social-list__item">
+            <a class="social-list__link" href="#">
+              <span class="visually-hidden">LinkedIn</span>
+              <svg class="social-list__icon social-list__icon--li" viewBox="0 0 600 600"
+                preserveAspectRatio="xMidYMid meet" width="30" height="30" fill="#ffffff">
+                <use xlink:href="./img/icons.svg#linkedin"></use>
+              </svg>
+            </a>
           </li>
         </ul>
-      </nav>
-      <ul class="header__social social-list">
-        <li class="social-list__item">
-          <a class="social-list__link social-list__link--fb" href="#">Facebook</a>
-        </li>
-        <li class="social-list__item">
-          <a class="social-list__link social-list__link--tw" href="#">Twitter</a>
-        </li>
-        <li class="social-list__item">
-          <a class="social-list__link social-list__link--sky" href="#">Skype</a>
-        </li>
-        <li class="social-list__item">
-          <a class="social-list__link social-list__link--in" href="#">LinkedIn</a>
-        </li>
-      </ul>
+      </div>
+      <div class="page-header__middle">
+        <div class="header__headline headline">
+          <h3 class="headline__title">Creatives</h3>
+          <p class="headline__text">Power by PSDfreebies.com</p>
+          <a class="headline__button" href="#">Scroll Down</a>
+        </div>
+      </div>
     </div>
+
   </header>
 
   <main class="site">
 
     <h1 class="visually-hidden">Creative Digital Agency</h1>
-    <section class="site__top site-top">
-      <h3>Creatives</h3>
-      <p class="site-top__text">Power by PSDfreebies.com</p>
-      <a class="site-top__button" href="#">Scroll Down</a>
-    </section>
-
     <section class="about-us">
       <h2>Features</h2>
       <h3 class="about-us__slogan">We Are An Awesome Agency</h3>
@@ -294,8 +322,8 @@
 
   </main>
 
-  <footer class="footer">
-    <div class="footer__copyright copyright"></div>
+  <footer class="page-footer">
+    <div class="page-footer__copyright copyright"></div>
     <p class="copyright__text">
       &copy; 2016 PSDfreebies.com – All Right Reserved
     </p>

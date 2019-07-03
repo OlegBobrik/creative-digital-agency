@@ -1,13 +1,22 @@
 .logo {
   position: relative;
-  width: 67px;
-  height: 67px;
-  background-color: #c8c7c7;
+  flex: 1;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 67px;
+    height: 67px;
+    background-color: #c8c7c7;
+  }
 }
 
 .logo__cs {
   position: relative;
-  top: -10px;
+  top: -8px;
   left: -12px;
   z-index: 9999;
   display: flex;

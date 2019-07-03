@@ -1,0 +1,37 @@
+.page-header {
+  overflow: hidden;
+}
+
+.page-header__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100vw;
+  height: 100vh;
+  padding-top: 30px;
+  background-image: url("/img/bg-top.jpg");
+  background-color: #2d2d2d;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.page-header__nav {
+  margin-top: 21px;
+  margin-right: 2em;
+}
+
+.page-header__top {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: right;
+  width: 1600px;
+  padding: 0 200px;
+  box-sizing: border-box;
+  border-bottom: 1px solid rgba(234, 234, 234, 0.38);
+}
+
+.page-header__middle {
+  width: 100%;
+  text-align: center;
+}

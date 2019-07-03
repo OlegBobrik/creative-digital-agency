@@ -1,4 +1,9 @@
 .social-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 146px;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -9,7 +14,27 @@
 }
 
 .social-list__link {
-  font-size: 16px;
-  color: #ffffff;
   text-decoration: none;
+}
+
+.social-list__icon {
+  width: 20px;
+  height: 20px;
+  fill: #ffffff;
+
+  &--fb:hover {
+    fill: #4267b2;
+  }
+
+  &--sky:hover {
+    fill: #00aff0;
+  }
+
+  &--tw:hover {
+    fill: #38a1f3;
+  }
+
+  &--li:hover {
+    fill: #0077b5;
+  }
 }
