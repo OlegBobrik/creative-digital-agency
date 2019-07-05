@@ -1,12 +1,13 @@
 .logo {
-  position: relative;
   flex: 1;
+  width: 67px;
+  height: 67px;
 
   &::after {
     content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
+    position: relative;
+    top: -59px;
+    left: 12px;
     display: block;
     width: 67px;
     height: 67px;
@@ -16,8 +17,6 @@
 
 .logo__cs {
   position: relative;
-  top: -8px;
-  left: -12px;
   z-index: 9999;
   display: flex;
   justify-content: center;

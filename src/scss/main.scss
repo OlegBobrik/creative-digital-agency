@@ -6,6 +6,7 @@
 @import "./global/visually-hidden.scss";
 @import "./global/variables.scss";
 @import "./global/base.scss";
+@import "./global/wrapper.scss";
 
 // Blocks styles
 @import "./blocks/page-header.scss";
@@ -13,4 +14,6 @@
 @import "./blocks/nav-list.scss";
 @import "./blocks/social-list.scss";
 @import "./blocks/headline.scss";
-@import "./blocks/site.scss";
+@import "./blocks/about-us.scss";
+@import "./blocks/news.scss";
+@import "./blocks/news-post.scss";

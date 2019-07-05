@@ -1,0 +1,15 @@
+.news__container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+
+  &--reverse {
+    flex-direction: row-reverse;
+  }
+}
+
+.news__article,
+.news__images {
+  width: 50%;
+}

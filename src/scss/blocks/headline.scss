@@ -4,15 +4,69 @@
 }
 
 .headline__title {
-  margin: 20px 0;
+  margin: 0;
+  margin-bottom: 10px;
+  padding-right: 28px;
   line-height: normal;
-  font-size: 152px;
+  font-size: 7.95vw;
   letter-spacing: -0.05em;
   color: #ffffff;
 }
 
 .headline__text {
-  font-size: 24px;
-  letter-spacing: 0.74em;
+  margin: 0;
+  margin-bottom: 108px;
+  font-size: 1.25vw;
+  letter-spacing: 0.78em;
   color: $blue;
+}
+
+.headline__button {
+  position: relative;
+  margin-right: 17px;
+  font-family: $opensans;
+  font-size: 13px;
+  line-height: 22px;
+  text-decoration: none;
+  text-transform: none;
+  color: #ffffff;
+  border: none;
+  background: none;
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 62px;
+    left: 33px;
+    display: block;
+    width: 9px;
+    height: 9px;
+    border-bottom: 4px solid #ffffff;
+    border-left: 4px solid #ffffff;
+    transform: rotate(-45deg);
+    animation: arrow-jump 0.5s infinite;
+    animation-direction: alternate;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 38px;
+    left: 5px;
+    display: block;
+    width: 65px;
+    height: 65px;
+    border: 1px solid #ffffff;
+    border-radius: 50%;
+  }
+}
+
+@keyframes arrow-jump {
+  0% {
+    top: 60px;
+  }
+  100% {
+    top: 65px
+  }
 }
