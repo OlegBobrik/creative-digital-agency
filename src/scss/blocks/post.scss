@@ -1,0 +1,32 @@
+.post {
+  margin: 0 15px 15px 15px;
+}
+
+.post__image {
+  order: 1;
+  width: 270px;
+  height: 280px;
+  margin-bottom: 32px;
+}
+
+.post__header {
+  order: 2;
+  margin-bottom: 9px;
+  font-size: 18px;
+  line-height: 36px;
+  font-weight: 400;
+  color: $blue;
+}
+
+.post__title {
+  margin: 0;
+}
+
+.post__text {
+  order: 3;
+  margin: 0;
+  font-weight: 300;
+  text-align: center;
+  text-transform: none;
+  color: $black;
+}

@@ -1,0 +1,28 @@
+input:not([type="submit"]),
+textarea {
+  padding: 0 22px;
+  font-weight: 300;
+  color: #ffffff;
+  box-sizing: border-box;
+  border: 1px solid #ffffff;
+  background: transparent;
+  transition: border-color 0.2s ease-in-out;
+
+  &::placeholder {
+    font-weight: 300;
+    color: #ffffff;
+  }
+
+  &:focus::placeholder {
+    opacity: 0;
+  }
+
+  &:hover {
+    border-color: $blue;
+  }
+}
+
+textarea {
+  padding: 13px 22px;
+  resize: vertical;
+}

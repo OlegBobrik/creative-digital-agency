@@ -1,0 +1,45 @@
+.page-footer {
+  min-height: 89px;
+  background-color: $black;
+}
+
+.page-footer__wrapper {
+  padding-top: 41px;
+  padding-bottom: 34px;
+}
+
+.page-footer__copyright {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 22px;
+  font-family: $roboto;
+  font-size: 13px;
+  line-height: 36px;
+  color: #ffffff;
+}
+
+.page-footer__text {
+  margin: 0;
+  letter-spacing: 0.025em;
+}
+
+.page-footer__link {
+  text-decoration: none;
+  color: #ffffff;
+
+  span {
+    &::before {
+      content: "";
+      position: relative;
+      top: 4px;
+      left: 0px;
+      display: inline-block;
+      width: 31px;
+      height: 25px;
+      background-image: url("/img/psdfreebies-logo.png");
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+  }
+}

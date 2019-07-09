@@ -1,0 +1,19 @@
+.map {
+  position: relative;
+  min-height: 332px;
+}
+
+.map__frame {
+  position: absolute;
+  z-index: 1000;
+  width: 100vw;
+  height: 332px;
+  background: #000;
+}
+
+.map__image {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -800px;
+}

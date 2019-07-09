@@ -1,54 +1,54 @@
 @font-face {
-  font-family: "Gotham";
+  font-family: "Gotham Agency";
   src: url("/fonts/GothamBook.woff2") format("woff2");
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "Gotham";
+  font-family: "Gotham Agency";
   src: url("/fonts/GothamMedium.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "Gotham";
+  font-family: "Gotham Agency";
   src: url("/fonts/Gotham-Bold.woff2") format("woff2");
   font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "Myriad Pro Regular";
+  font-family: "Myriad Pro Regular Agency";
   src: url("/fonts/MyriadPro-Regular.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "Open Sans";
+  font-family: "Open Sans Agency";
   src: url("/fonts/OpenSans-Regular.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "Open Sans";
+  font-family: "Open Sans Agency";
   src: url("/fonts/OpenSans-Bold.woff2") format("woff2");
   font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "Roboto";
+  font-family: "Roboto Agency";
   src: url("/fonts/Roboto-Regular.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "Roboto";
+  font-family: "Roboto Agency";
   src: url("/fonts/Roboto-Bold-Condensed.woff2") format("woff2");
   font-weight: bold;
   font-style: normal;

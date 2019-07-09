@@ -24,10 +24,10 @@
   white-space: nowrap;
   text-decoration: none;
   color: #ffffff;
+  transition: border-bottom 0.3s ease-in-out;
 
   &:hover {
     border-bottom: 6px solid $blue;
-    transition: border-bottom 0.2s ease-in-out;
   }
 
   &--active {
@@ -48,7 +48,7 @@
   &:hover::before {
     background-color: $blue;
     opacity: 0.3;
-    transition: background-color 0.1s ease-in-out;
+    transition: background-color 0.5s ease-in-out;
   }
 
   &--active:hover::before {

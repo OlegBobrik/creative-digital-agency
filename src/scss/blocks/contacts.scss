@@ -1,0 +1,41 @@
+.contacts {
+  text-align: center;
+  background-image: url("/img/bg-contacts.jpg");
+  background-color: #2d2d2d;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-attachment: fixed;
+}
+
+.contacts__wrapper {
+  padding-top: 224px;
+  padding-bottom: 101px;
+}
+
+.contacts__slogan {
+  position: relative;
+  margin: 0;
+  margin-bottom: 154px;
+  font-size: 37px;
+  line-height: 24px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #ffffff;
+
+  &::before {
+    content: "C";
+    position: absolute;
+    top: -92px;
+    left: 50%;
+    display: block;
+    width: 218px;
+    height: 210px;
+    margin-left: -105px;
+    font-family: $roboto;
+    font-size: 247px;
+    line-height: 210px;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.18);
+  }
+}

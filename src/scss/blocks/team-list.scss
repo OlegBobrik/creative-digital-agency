@@ -1,0 +1,31 @@
+.team-list__item {
+  position: relative;
+}
+
+.team-list__image {
+  width: 270px;
+}
+
+.team-list__name {
+  font-size: 20px;
+  text-transform: uppercase;
+  color: $blue;
+}
+
+.team-list__substrate {
+  position: relative;
+  width: 216px;
+  top: -54px;
+  left: 27px;
+  padding-top: 19px;
+  background-color: #ffffff;
+}
+
+.team-list__name {
+  margin: 0;
+  margin-bottom: 2px;
+}
+
+.team-list__position {
+  margin: 0;
+}

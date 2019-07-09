@@ -6,6 +6,7 @@
 @import "./global/visually-hidden.scss";
 @import "./global/variables.scss";
 @import "./global/base.scss";
+@import "./global/input.scss";
 @import "./global/wrapper.scss";
 
 // Blocks styles
@@ -17,3 +18,13 @@
 @import "./blocks/about-us.scss";
 @import "./blocks/news.scss";
 @import "./blocks/news-post.scss";
+@import "./blocks/blog.scss";
+@import "./blocks/post.scss";
+@import "./blocks/quick-area.scss";
+@import "./blocks/features.scss";
+@import "./blocks/team.scss";
+@import "./blocks/team-list.scss";
+@import "./blocks/contacts.scss";
+@import "./blocks/form-contacts.scss";
+@import "./blocks/map.scss";
+@import "./blocks/page-footer.scss";
