@@ -14,7 +14,12 @@
   background-attachment: fixed;
 }
 
+.page-header__button-menu {
+  display: none;
+}
+
 .page-header__nav {
+  position: relative;
   width: 58%;
   margin-right: 40px;
   padding-top: 30px;
@@ -22,13 +27,14 @@
 
 .page-header__top {
   width: 100%;
-  margin-bottom: 239px;
+  margin-bottom: 24.5vh;
   padding: 0 20px;
   box-sizing: border-box;
   border-bottom: 1px solid rgba(234, 234, 234, 0.38);
 }
 
 .page-header__wrapper {
+  position: relative;
   display: flex;
   justify-content: space-between;
   box-sizing: border-box;
@@ -38,5 +44,50 @@
 
 .page-header__middle {
   width: 100%;
+  padding: 0 20px 30px 20px;
+  box-sizing: border-box;
   text-align: center;
+}
+
+@media (max-width: $tablet-width) {
+  .page-header__wrapper {
+    align-items: flex-end;
+    padding-bottom: 27px;
+  }
+
+  .page-header__button-menu {
+    position: relative;
+    order: 1;
+    display: block;
+    width: 30px;
+    height: 30px;
+    margin-bottom: 10px;
+    border: none;
+    border-top: 5px solid #ffffff;
+    border-bottom: 5px solid #ffffff;
+    border-radius: 5%;
+    background-color: transparent;
+    transition: border-bottom-color 0.2s ease-in-out;
+    cursor: pointer;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0.5em;
+      display: block;
+      width: 30px;
+      height: 5px;
+      background-color: #ffffff;
+      transition: background-color 0.1s ease-in-out;
+    }
+
+    &:hover {
+      border-color: $blue;
+    }
+
+    &:hover::before {
+      background-color: $blue;
+    }
+  }
 }

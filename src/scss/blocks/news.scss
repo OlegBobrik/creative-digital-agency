@@ -10,7 +10,42 @@
 }
 
 .news__article,
-.news__images {
+.news__image-container {
   width: 50%;
-  min-width: 280px;
+}
+
+.news__image-container {
+  position: relative;
+  overflow: hidden;
+
+  &--left {
+    background-color: #f3f3f3;
+  }
+
+  &--right {
+    background-color: $black;
+  }
+}
+
+.news__image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+}
+
+@media (max-width: 1024px) {
+  .news__container {
+    flex-direction: column;
+  }
+
+  .news__article,
+  .news__image-container {
+    width: 100%;
+  }
+
+  .news__image {
+    position: relative;
+  }
 }

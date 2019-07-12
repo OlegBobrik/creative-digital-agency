@@ -1,4 +1,7 @@
 .headline {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   font-family: $gotham;
   text-transform: uppercase;
 }
@@ -15,7 +18,7 @@
 
 .headline__text {
   margin: 0;
-  margin-bottom: 108px;
+  margin-bottom: 11vh;
   font-size: 1.25vw;
   letter-spacing: 0.78em;
   color: $blue;
@@ -23,6 +26,7 @@
 
 .headline__button {
   position: relative;
+  min-height: 110px;
   margin-right: 17px;
   font-family: $opensans;
   font-size: 13px;
@@ -53,12 +57,12 @@
 
   &::after {
     content: "";
-    position: absolute;
-    top: 36px;
-    left: -1px;
+    position: relative;
+    top: 18px;
+    left: 0px;
     display: block;
-    width: 65px;
-    height: 65px;
+    width: 63px;
+    height: 63px;
     border: 1px solid #ffffff;
     border-radius: 50%;
     transition: border-color 0.2s ease-in-out;
@@ -68,9 +72,45 @@
     color: $blue;
   }
 
-  &:hover::before, 
+  &:hover::before,
   &:hover::after {
     border-color: $blue;
+  }
+}
+
+@media (max-width: 1110px) {
+  .headline__title {
+    font-size: 8.7vw;
+  }
+
+  .headline__text {
+    font-size: 1.4vw;
+  }
+}
+
+@media (max-width: 960px) {
+  .headline__title {
+    font-size: 10.95vw;
+  }
+
+  .headline__text {
+    font-size: 1.7vw;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .headline__title {
+    font-size: 15vw;
+  }
+
+  .headline__text {
+    font-size: 2.4vw;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .headline__text {
+    margin-bottom: 8vh;
   }
 }
 
@@ -79,6 +119,6 @@
     top: 60px;
   }
   100% {
-    top: 65px
+    top: 65px;
   }
 }

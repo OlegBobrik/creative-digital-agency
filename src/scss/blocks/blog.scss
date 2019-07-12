@@ -10,6 +10,7 @@
 
 .blog__wrapper {
   position: relative;
+  padding: 0 20px;
 
   &::before {
     content: "B";
@@ -29,6 +30,7 @@
 }
 
 .blog__header {
+  margin-bottom: 58px;
   padding: 0 20px;
 }
 
@@ -43,7 +45,6 @@
 
 .blog__text {
   margin: 0;
-  margin-bottom: 58px;
   font-size: 30px;
   line-height: 37px;
   font-weight: 300;
@@ -64,7 +65,7 @@
   width: calc(100% / 4);
   padding-top: 15px;
   text-decoration: none;
-  transition: box-shadow 0.2s ease-in-out;
+  transition: box-shadow 0.1s ease-in-out;
 
   &:hover {
     box-shadow: 0px 0px 0px 1px $blue;
@@ -77,4 +78,32 @@
   flex-direction: column;
   text-align: center;
   text-align: -webkit-center;
+}
+
+@media (max-width: 1250px) {
+  .blog__link {
+    width: 40%;
+  }
+
+  .blog__text {
+    width: 90%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .blog__header  {
+    margin-bottom: 38px;
+  }
+}
+
+@media (max-width: 860px) {
+  .blog__link {
+    width: 100%;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .blog {
+    margin-bottom: 71px;
+  }
 }

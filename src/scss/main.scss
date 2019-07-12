@@ -1,6 +1,6 @@
 // CSS styles
+@import "../lib/normalize.css";
 @import "../css/fonts.css";
-@import "../css/normalize.css";
 
 // Global styles
 @import "./global/visually-hidden.scss";
@@ -16,6 +16,7 @@
 @import "./blocks/social-list.scss";
 @import "./blocks/headline.scss";
 @import "./blocks/about-us.scss";
+@import "./blocks/about-us-list.scss";
 @import "./blocks/news.scss";
 @import "./blocks/news-post.scss";
 @import "./blocks/blog.scss";

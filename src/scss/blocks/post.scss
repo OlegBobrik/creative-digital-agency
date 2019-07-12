@@ -30,3 +30,9 @@
   text-transform: none;
   color: $black;
 }
+
+@media (max-width: 1250px) {
+  .post {
+    margin-bottom: 25px;
+  }
+}

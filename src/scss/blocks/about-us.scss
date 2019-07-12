@@ -1,6 +1,8 @@
 .about-us {
   min-height: 576px;
-  padding-top: 162px;
+  padding-top: 16.5vh;
+  padding-bottom: 12.8vh;
+  box-sizing: border-box;
   font-family: $gotham;
   text-transform: uppercase;
   text-align: center;
@@ -10,6 +12,10 @@
 
 .about-us__wrapper {
   position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 20px;
 
   &::before {
     content: "W";
@@ -28,8 +34,7 @@
   }
 }
 
-.about-us__slogan,
-.about-us-list {
+.about-us__slogan {
   position: relative;
   z-index: 9999;
   margin: 0;
@@ -44,42 +49,40 @@
   letter-spacing: 0.01em;
 }
 
-.about-us-list {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  padding: 0 16px;
-  list-style: none;
-}
-
-.about-us-list__item {
-  width: calc(100% / 4 - 20px);
-
-  &::before {
-    content: "";
-    position: relative;
-    top: 0;
-    left: 50%;
-    display: block;
-    width: 133px;
-    height: 133px;
-    margin-left: -4.45em;
-    border-radius: 50%;
-    background-color: #2e85aa;
+@media (max-width: 1024px) {
+  .about-us {
+    padding-top: 22.5vh;
   }
 }
 
-.about-us-list__title {
-  margin-top: 12px;
-  margin-bottom: 17px;
-  font-size: 18px;
-  line-height: 36px;
-  font-weight: 400;
+@media (max-width: 710px) {
+  .about-us__slogan {
+    margin-bottom: 100px;
+  }
 }
 
-.about-us-list__text {
-  margin: 0;
-  font-weight: 300;
-  text-transform: none;
+@media (max-width: 960px) {
+  .about-us {
+    min-height: 100vh;
+  }
+
+  .about-us__wrapper {
+    padding-bottom: 20px;
+
+    &::before {
+      margin-left: -110px;
+    }
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .about-us {
+    padding-top: 20vh;
+  }
+}
+
+@media (max-width: 430px) {
+  .about-us__slogan {
+    font-size: 28px;
+  }
 }

@@ -22,7 +22,7 @@
   width: 20px;
   height: 20px;
   fill: #ffffff;
-  transition: fill 0.2s ease-in-out;
+  transition: fill 0.1s ease-in-out;
 
   &--fb:hover {
     fill: #4267b2;
@@ -38,5 +38,30 @@
 
   &--li:hover {
     fill: #0077b5;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .social-list {
+    flex: 1;
+    margin-right: 40px;
+    padding-top: 0;
+  }
+
+  .social-list__icon {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+@media (max-width: 430px) {
+  .social-list__icon {
+    width: 20px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .social-list {
+    margin-right: 25px;
   }
 }
