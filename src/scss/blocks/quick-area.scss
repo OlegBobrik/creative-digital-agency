@@ -5,26 +5,67 @@
 .quick-area__wrapper {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   padding: 106px 20px 133px 20px;
 }
 
 .quick-area__text {
-  width: 50%;
+  position: relative;
+  width: 48%;
   margin: 0;
-  padding: 0 20px 20px 120px;
+  padding: 0 0 20px 120px;
   box-sizing: border-box;
   font-weight: 300;
   color: #ffffff;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: 16px;
+    display: block;
+    width: 69px;
+    height: 69px;
+    background-image: url("/img/pen.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
 }
 
 @media (max-width: 960px) {
   .quick-area__wrapper {
     flex-direction: column;
     padding-top: 80px;
-    padding-bottom: 100px; 
+    padding-bottom: 60px;
+    font-size: 18px;
   }
 
   .quick-area__text {
     width: 100%;
+  }
+}
+
+@media (max-width: 550px) {
+  .quick-area__text {
+    font-size: 18px;
+    margin-bottom: 20px;
+    padding-left: 10px;
+
+    &::before {
+      position: relative;
+      top: 0;
+      right: 0;
+      left: 0;
+      width: 49px;
+      height: 49px;
+      margin: auto;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+@media (max-width: 430px) {
+  .quick-area__text {
+    padding-right: 0;
   }
 }

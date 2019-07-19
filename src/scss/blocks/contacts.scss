@@ -9,16 +9,18 @@
 }
 
 .contacts__wrapper {
-  padding-top: 224px;
-  padding-bottom: 101px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 218px 20px 101px 20px;
 }
 
 .contacts__slogan {
   position: relative;
   margin: 0;
-  margin-bottom: 154px;
+  margin-bottom: 145px;
   font-size: 37px;
-  line-height: 24px;
+  line-height: 40px;
   font-weight: 400;
   text-transform: uppercase;
   color: #ffffff;
@@ -26,7 +28,7 @@
   &::before {
     content: "C";
     position: absolute;
-    top: -92px;
+    top: -87px;
     left: 50%;
     display: block;
     width: 218px;
@@ -37,5 +39,11 @@
     line-height: 210px;
     font-weight: 700;
     color: rgba(255, 255, 255, 0.18);
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .contacts__slogan {
+    margin-bottom: 100px;
   }
 }

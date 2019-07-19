@@ -65,7 +65,7 @@
 @media (max-width: 1600px) {
   .news-post {
     padding-top: 4vh;
-    padding-bottom: 4vh;
+    padding-bottom: 3vh;
 
     &--left {
       padding-right: 7vw;
@@ -183,5 +183,15 @@
 
   .news-post__text {
     font-size: 15px;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .news-post__date {
+    font-size: 14px;
+  }
+
+  .news-post__text {
+    font-size: 18px;
   }
 }

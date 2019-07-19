@@ -86,12 +86,12 @@
   }
 
   .blog__text {
-    width: 90%;
+    width: 100%;
   }
 }
 
 @media (max-width: 1024px) {
-  .blog__header  {
+  .blog__header {
     margin-bottom: 38px;
   }
 }

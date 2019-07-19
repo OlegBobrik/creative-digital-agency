@@ -43,15 +43,18 @@
     content: "";
     position: absolute;
     top: 60px;
+    right: 27px;
     left: 27px;
     display: block;
     width: 9px;
     height: 9px;
+    margin: auto;
     border-bottom: 4px solid #ffffff;
     border-left: 4px solid #ffffff;
     transform: rotate(-45deg);
     animation: arrow-jump 0.5s infinite;
     animation-direction: alternate;
+    animation-timing-function: ease-in-out;
     transition: border-color 0.2s ease-in-out;
   }
 
@@ -59,10 +62,12 @@
     content: "";
     position: relative;
     top: 18px;
+    right: 0;
     left: 0px;
     display: block;
     width: 63px;
     height: 63px;
+    margin: auto;
     border: 1px solid #ffffff;
     border-radius: 50%;
     transition: border-color 0.2s ease-in-out;
@@ -106,19 +111,14 @@
   .headline__text {
     font-size: 2.4vw;
   }
+
+  .headline__button {
+    margin-right: 0;
+  }
 }
 
 @media (max-width: $mobile-width) {
   .headline__text {
     margin-bottom: 8vh;
-  }
-}
-
-@keyframes arrow-jump {
-  0% {
-    top: 60px;
-  }
-  100% {
-    top: 65px;
   }
 }

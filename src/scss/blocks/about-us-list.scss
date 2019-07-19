@@ -11,6 +11,7 @@
 }
 
 .about-us-list__item {
+  position: relative;
   width: calc(100% / 4 - 20px);
 
   &::before {
@@ -24,6 +25,36 @@
     margin-left: -4.45em;
     border-radius: 50%;
     background-color: #2e85aa;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 53px;
+    right: 0;
+    left: 0;
+    display: block;
+    width: 33px;
+    height: 33px;
+    margin: auto;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  &--pen-1::after {
+    background-image: url("/img/pen.svg");
+  }
+
+  &--pen-2::after {
+    background-image: url("/img/pen.svg");
+  }
+
+  &--loupe::after {
+    background-image: url("/img/loupe.svg");
+  }
+
+  &--chat::after {
+    background-image: url("/img/chat.svg");
   }
 }
 
@@ -66,6 +97,6 @@
   }
 
   .about-us-list__text {
-    font-size: 14px;
+    font-size: 18px;
   }
 }

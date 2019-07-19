@@ -4,8 +4,7 @@
 }
 
 .page-footer__wrapper {
-  padding-top: 41px;
-  padding-bottom: 34px;
+  padding: 41px 20px 34px 20px;
 }
 
 .page-footer__copyright {
@@ -41,5 +40,16 @@
       background-repeat: no-repeat;
       background-size: contain;
     }
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .page-footer__wrapper {
+    padding: 20px;
+  }
+
+  .page-footer__copyright {
+    flex-direction: column-reverse;
+    font-size: 10px;
   }
 }
