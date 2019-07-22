@@ -11,7 +11,7 @@ document.addEventListener(`DOMContentLoaded`, () => {
 
   menuButton.addEventListener(`click`, () => {
     menu.classList.toggle(`nav--hide`);
-    menuButton.classList.toggle(`page-header__button-menu--open`);
+    menuButton.classList.toggle(`is-active`);
   });
 
   window.addEventListener(`resize`, () => {

@@ -19,8 +19,11 @@
               <span class="logo__cs">CS</span>
             </a>
           </div>
-          <button class="page-header__button-menu" type="button">
+          <button class="page-header__button-menu hamburger hamburger--spin" type="button">
             <span class="visually-hidden">Открыть меню</span>
+            <span class="hamburger-box">
+              <span class="hamburger-inner"></span>
+            </span>
           </button>
           <nav class="page-header__nav nav">
             <ul class="nav__list nav-list">
@@ -154,9 +157,10 @@
           </p>
         </article>
         <div class="news__image-container news__image-container--right">
-          <img class="news__image" src="./img/news-1.jpg" width="800" height="474" alt="Web Designer">
+          <picture>
+            <img class="news__image" src="./img/news-1.jpg" width="800" height="474" alt="Web Designer">
+          </picture>
         </div>
-
       </div>
       <div class="news__container news__container--reverse">
         <article class="news__article news-post news-post--right">
@@ -177,7 +181,9 @@
           </p>
         </article>
         <div class="news__image-container news__image-container--left">
-          <img class="news__image" src="./img/news-2.jpg" width="800" height="474" alt="Web Designer">
+          <picture>
+            <img class="news__image" src="./img/news-2.jpg" width="800" height="474" alt="Web Designer">
+          </picture>
         </div>
       </div>
     </section>
@@ -197,7 +203,9 @@
               <header class="post__header">
                 <h4 class="post__title">Fresh Summer Campaign</h4>
               </header>
-              <img class="post__image" src="./img/blog-1.jpg" width="270" height="280" alt="Staff">
+              <picture>
+                <img class="post__image" src="./img/blog-1.jpg" width="270" height="280" alt="Staff">
+              </picture>
               <p class="post__text">
                 Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor
                 sit amet, consectetur adipiscing elit. Donec sed odio dui. Vivamus sagittis lacus vel augue
@@ -209,7 +217,9 @@
               <header class="post__header">
                 <h4 class="post__title">Fresh Summer Campaign</h4>
               </header>
-              <img class="post__image" src="./img/blog-2.jpg" width="270" height="280" alt="Staff">
+              <picture>
+                <img class="post__image" src="./img/blog-2.jpg" width="270" height="280" alt="Staff">
+              </picture>
               <p class="post__text">
                 Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor
                 sit amet, consectetur adipiscing elit. Donec sed odio dui. Vivamus sagittis lacus vel augue
@@ -221,7 +231,9 @@
               <header class="post__header">
                 <h4 class="post__title">Fresh Summer Campaign</h4>
               </header>
-              <img class="post__image" src="./img/blog-3.jpg" width="270" height="280" alt="Computer">
+              <picture>
+                <img class="post__image" src="./img/blog-3.jpg" width="270" height="280" alt="Computer">
+              </picture>
               <p class="post__text">
                 Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor
                 sit amet, consectetur adipiscing elit. Donec sed odio dui. Vivamus sagittis lacus vel augue
@@ -233,7 +245,9 @@
               <header class="post__header">
                 <h4 class="post__title">Fresh Summer Campaign</h4>
               </header>
-              <img class="post__image" src="./img/blog-1.jpg" width="270" height="280" alt="Staff">
+              <picture>
+                <img class="post__image" src="./img/blog-1.jpg" width="270" height="280" alt="Staff">
+              </picture>
               <p class="post__text">
                 Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor
                 sit amet, consectetur adipiscing elit. Donec sed odio dui. Vivamus sagittis lacus vel augue
@@ -288,28 +302,36 @@
         </p>
         <ul class="team__list team-list">
           <li class="team-list__item">
-            <img class="team-list__image" src="./img/photo-1.jpg" width="270" height="414" alt="John Snow Photo">
+            <picture>
+              <img class="team-list__image" src="./img/photo-1.jpg" width="270" height="414" alt="John Snow Photo">
+            </picture>
             <div class="team-list__substrate">
               <p class="team-list__name">John Snow</p>
               <p class="team-list__position">CEO</p>
             </div>
           </li>
           <li class="team-list__item">
-            <img class="team-list__image" src="./img/photo-2.jpg" width="270" height="414" alt="Lady Sansa Photo">
+            <picture>
+              <img class="team-list__image" src="./img/photo-2.jpg" width="270" height="414" alt="Lady Sansa Photo">
+            </picture>
             <div class="team-list__substrate">
               <p class="team-list__name">Lady Sansa</p>
               <p class="team-list__position">WebDesigner</p>
             </div>
           </li>
           <li class="team-list__item">
-            <img class="team-list__image" src="./img/photo-3.jpg" width="270" height="414" alt="David Smith Photo">
+            <picture>
+              <img class="team-list__image" src="./img/photo-3.jpg" width="270" height="414" alt="David Smith Photo">
+            </picture>
             <div class="team-list__substrate">
               <p class="team-list__name">David Smith</p>
               <p class="team-list__position">Photographer</p>
             </div>
           </li>
           <li class="team-list__item">
-            <img class="team-list__image" src="./img/photo-4.jpg" width="270" height="414" alt="Lady Sansa Photo">
+            <picture>
+              <img class="team-list__image" src="./img/photo-4.jpg" width="270" height="414" alt="Lady Sansa Photo">
+            </picture>
             <div class="team-list__substrate">
               <p class="team-list__name">Lady Sansa</p>
               <p class="team-list__position">Photographer</p>
@@ -342,7 +364,7 @@
       <h2 class="visually-hidden">Map</h2>
       <iframe class="map__frame"
         src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d5250.003201644769!2d2.340124482071606!3d48.85817986447763!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1spont+neuf!5e0!3m2!1sru!2sru!4v1562651579136!5m2!1sru!2sru"
-        width="1600" height="332" frameborder="0" style="border: 0" allowfullscreen>
+        width="1600" height="332" style="border: 0" allowfullscreen>
       </iframe>
     </section>
   </main>
